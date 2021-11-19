@@ -20,7 +20,7 @@
 }
 
 .container-medium{
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 
 }
@@ -40,7 +40,12 @@
 .btn{
     color: white;
     background-color: #0061FF;
-    padding: 5px 20px;
+    padding: 7px 20px;
+    text-decoration: none;
+}
+
+.jumbo-w40 .btn{
+    margin-top: 30px;
 }
 .nav-bar{
     display: inline-block;
@@ -58,6 +63,31 @@
     text-align: right;
 }
 
+.jumbo{
+    width: 100%;
+    height: 800px;
+    background-color: #B4D0E7;
+    
+}
+
+
+
+/*text utilities*/
+.jumbo .container-medium h1{
+    font-size: 5rem;
+    font-weight: bold 700;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    
+}
+
+.jumbo-w40 p{
+    padding-right: 40%;
+    font-weight: 500;
+    padding-bottom: 30px;
+
+}
+
 
 /*colonne float*/
 .col{
@@ -71,5 +101,19 @@
     line-height: 80px;
 }
 
+.jumbo-w40{
+    width: 40%;
+}
 
-/*
+.jumbo-60{
+    width: 60%;
+}
+
+
+/*immagini*/
+
+.jumbo-w60 img{
+    max-width: 100%;
+    height: 510px;
+
+}
