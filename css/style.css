@@ -26,11 +26,41 @@
 }
 
 .container-small{
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
 }
 
+.fake-btn{
+    text-decoration: none;
+    padding-top: 70px;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
 
+
+.fake-radio{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    content: " ";
+    cursor: pointer;
+}
+
+.fake-radio{
+    border: 5px solid #0061FF
+}
+
+.fake-radio-gray{
+    border: 2px solid gray;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    content: " ";
+    cursor: pointer;
+}
 
 #logo{
     vertical-align: middle;
@@ -70,6 +100,10 @@
     
 }
 
+.dropbox-biss-plane{
+    padding-top: 300px;
+    height: 900px;
+}
 
 
 /*text utilities*/
@@ -86,6 +120,20 @@
     font-weight: 500;
     padding-bottom: 30px;
 
+}
+.jumbo-w40 h4{
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.fa-arrow-down{
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+ h2{
+    font-size: 50px;
 }
 
 
