@@ -33,6 +33,7 @@
 .fake-btn{
     text-decoration: none;
     padding-top: 70px;
+    padding-bottom: 40px;
     display: inline-block;
     font-size: 1.5rem;
     margin-right: 20px;
@@ -85,6 +86,7 @@
     text-decoration: none;
     display: inline block;
     vertical-align: middle;
+    font-weight: 200;
     margin: 0 30px;
     font-size: 16px;
 }
@@ -105,7 +107,25 @@
     height: 900px;
 }
 
+.section-btn{
+    display: block;
+}
 
+.card-description ul{
+    list-style-type: none;
+    padding-top: 40px;
+
+}
+
+.card-description ul li{
+    padding-top: 20px;
+    font-size: 12;
+    font-weight: normal;
+}
+
+.fa-pencil-alt{
+    height: 30px;
+}
 /*text utilities*/
 .jumbo .container-medium h1{
     font-size: 5rem;
@@ -155,6 +175,60 @@
 
 .jumbo-60{
     width: 60%;
+}
+.wd-30{
+    width: calc(100% / 3);
+}
+
+.card{
+    border: 1px solid lightgray;
+}
+
+.center-card{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.left-card{
+    width: 90%;
+    
+}
+
+.right-card{
+    width: 90%;
+    margin-left: auto;
+}
+
+.card h3{
+    text-align:center;
+    font-weight: normal;
+    border-bottom: 1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-card h2{
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.main-card h4{
+    padding-top: 15px;
+
+}
+
+.main-card p{
+    color:gray;
+    font-size: 15px;
+    padding-top: 10px;
+
+
+}
+
+
+.main-card{
+    padding: 30px 25px;
 }
 
 
