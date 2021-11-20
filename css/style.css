@@ -26,7 +26,7 @@
 }
 
 .container-small{
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -75,6 +75,41 @@
     text-decoration: none;
 }
 
+.btn-large{
+    color: white;
+    background-color: #0061FF;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+.btn-card .btn-large{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.buy-link{
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.buy-link a{
+    color: #0061FF;
+}
+
+.link-black{
+    color: black;
+    display: inline-block;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
+    
+}
+
 .jumbo-w40 .btn{
     margin-top: 30px;
 }
@@ -104,7 +139,7 @@
 
 .dropbox-biss-plane{
     padding-top: 300px;
-    height: 900px;
+    height: auto;
 }
 
 .section-btn{
@@ -114,24 +149,27 @@
 .card-description ul{
     list-style-type: none;
     padding-top: 40px;
-
+    list-style-image: url();
 }
 
+.lista-card ul{
+    list-style-type: none;
+}
+
+.lista-card ul li,
 .card-description ul li{
     padding-top: 20px;
     font-size: 12;
     font-weight: normal;
 }
 
-.fa-pencil-alt{
-    height: 30px;
-}
+
 /*text utilities*/
 .jumbo .container-medium h1{
     font-size: 5rem;
     font-weight: bold 700;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 86px;
     
 }
 
@@ -156,6 +194,62 @@
     font-size: 50px;
 }
 
+.lista-card li::before{
+    color: #0061FF;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content: "\f00c";
+}
+.sale-banner h3,
+.card h3{
+    text-align:center;
+    font-weight: normal;
+    border-bottom: 1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-card h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main-card h4{
+    padding-top: 15px;
+}
+
+.main-card p{
+    color:gray;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.col.w40 h2,
+.left-banner h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.left-banner h3{
+    text-align: left;
+    font-weight: bold;
+    border-bottom: none;
+    padding-bottom: 30px;
+}
+
+.right-banner a{
+    text-align: center;
+    display: block;
+}
+.col.w40 p,
+.col.w40{
+    padding-top: 60px;
+}
+
+.col.w40 p{
+    padding-top: 5px;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
 
 /*colonne float*/
 .col{
@@ -168,67 +262,65 @@
     height: 80px;
     line-height: 80px;
 }
-
+.w40,
 .jumbo-w40{
     width: 40%;
 }
 
+.w60,
 .jumbo-60{
     width: 60%;
 }
+
 .wd-30{
     width: calc(100% / 3);
 }
 
 .card{
     border: 1px solid lightgray;
+    height: 1000px;
+    margin-bottom: 50px;
 }
 
 .center-card{
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
 .left-card{
-    width: 90%;
+    width: 85%;
     
 }
 
 .right-card{
-    width: 90%;
+    width: 85%;
     margin-left: auto;
 }
 
-.card h3{
-    text-align:center;
-    font-weight: normal;
-    border-bottom: 1px solid lightgray;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.main-card h2{
-    font-size: 28px;
-    font-weight: bold;
-
-}
-
-.main-card h4{
-    padding-top: 15px;
-
-}
-
-.main-card p{
-    color:gray;
-    font-size: 15px;
-    padding-top: 10px;
-
-
-}
-
-
 .main-card{
-    padding: 30px 25px;
+    padding: 35px 40px;
+}
+
+.sale-banner{
+    width: 100%;
+    height: 250px;
+    border: 1px solid lightgray;
+}
+
+.left-banner{
+    width: 70%;
+    padding: 35px 40px;
+    padding-right: 0;
+}
+
+.right-banner{
+    width: 30%;
+    padding-right: 35px;
+    padding-top: 40px;
+}
+
+.partner-section{
+    padding-top: 150px;
 }
 
 
@@ -237,5 +329,8 @@
 .jumbo-w60 img{
     max-width: 100%;
     height: 510px;
+}
 
+#partner-img{
+    max-width: 90%;
 }
