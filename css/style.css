@@ -91,19 +91,31 @@
     font-weight: 600;
 }
 
-.btn-white{
+.btn-transparent{
     text-decoration: none;
     border: 1px solid black;
     padding: 10px 15px;
     font-size: 1.1rem;
 }
 
+.btn-white{
+    text-decoration: none;
+    background-color: white;
+    border: 1pz solid gray;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+.team-banner a,
 .buy-link{
     display: inline-block;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
+.team-banner a,
 .buy-link a{
     color: #0061FF;
 }
@@ -152,7 +164,6 @@
 }
 
 
-
 .card-description ul{
     list-style-type: none;
     padding-top: 40px;
@@ -168,6 +179,8 @@
     padding-top: 20px;
     font-size: 12;
     font-weight: normal;
+    padding-left: 17px;
+    position: relative
 }
 
 
@@ -200,12 +213,21 @@
  h2{
     font-size: 40px;
 }
-
+.card-description ul li .fas,
+.card-description ul li .far{
+    position: absolute;
+    font-size: 15px;
+    left: 0;
+    
+}
 .lista-card li::before{
     color: #0061FF;
     font-family: "Font Awesome 5 Free";
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 15px;
     content: "\f00c";
+    position: absolute;
+    left: 0;
 }
 .sale-banner h3,
 .card h3{
@@ -247,12 +269,12 @@
     text-align: center;
     display: block;
 }
-.col.w40 p,
-.col.w40{
+.col.w40.text p,
+.col.w40.text{
     padding-top: 60px;
 }
 
-.col.w40 p{
+.col.w40.text p{
     padding-top: 5px;
     font-size: 1.1rem;
     line-height: 30px;
@@ -268,6 +290,17 @@
     font-size: 1.2rem;
     line-height: 1.4rem;
 }
+
+.ctr-square p{
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    line-height: 1.5rem;
+}
+
+.wd70 .dark-red-color{
+    padding-top: 150px;
+}
+
 
 /*colonne float*/
 .col{
@@ -292,6 +325,16 @@
 
 .wd-30{
     width: calc(100% / 3);
+}
+
+.wd30{
+    width: 30%;
+    
+}
+
+.wd70{
+    width: 70%;
+    padding-right: 25%;
 }
 
 .card{
@@ -346,7 +389,6 @@
     height: auto;
 }
 .raw-up .wd-30{
-    
     height: auto;
 }
 
@@ -359,6 +401,46 @@
 .card.operations{
     border: none;
 }
+
+.partner .col{
+    height: 500px;
+}
+
+.team-banner{
+    width: 45%;
+    margin-top: 240px;
+    margin-bottom: 30px;
+}
+
+.square-partner{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    float: left;
+}
+
+.ctr-square{
+    width: 100%;
+    height: 100%;
+    padding: 60px 50px;
+    font-style: normal;
+}
+
+.section-free-trial{
+    height: 400px;
+}
+
+.section-free-trial .wd30{
+    padding-top: 150px;
+    text-align: center ;
+}
+
+
+
+.wd70 .dark-red-color{
+    vertical-align: middle;
+}
+
 /*immagini*/
 
 .jumbo-w60 img{
@@ -372,4 +454,73 @@
 
 .raw-up .wd-30 img{
     max-width: 100%;
+}
+
+.square-partner img{
+    max-width: 45%;
+    height: auto;
+    filter: invert(100%);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ctr-square img{
+    max-width: 25%;
+    height: auto;
+}
+
+.ctr-square hr{
+    color: lightgray;
+    width: 60px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+
+/*colors*/
+
+.light-green{
+    background-color: #A2D39B;
+}
+
+.dark-red-color{
+    color: #61082B;
+    
+}
+
+.dark-red{
+    background-color: #61082B;
+
+}
+
+.red{
+    background-color: #D5001F;
+}
+
+.ciano{
+    background-color: #0093CE;
+}
+
+.vivid-red{
+    background-color: #FF1C1C;
+}
+
+.gray{
+    background-color: #F5F5F5;
+}
+
+.light-blu{
+    background-color: #B4D0E7;
+}
+
+.dark-blu{
+    background-color: #0D2481;
+}
+
+.yellow{
+    background-color: #FFD830;
 }
