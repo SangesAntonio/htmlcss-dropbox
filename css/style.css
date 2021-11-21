@@ -77,6 +77,7 @@
     background-color: #0061FF;
     padding: 7px 20px;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .btn-large{
@@ -84,6 +85,7 @@
     background-color: #0061FF;
     padding: 10px 0px;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .btn-card .btn-large{
@@ -93,6 +95,7 @@
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
+    transition: background-color 0.3s;
 }
 
 .btn-transparent{
@@ -145,6 +148,8 @@
     font-weight: 200;
     margin: 0 30px;
     font-size: 16px;
+    border-bottom: 0px solid white;
+    transition: border-bottom 0.4s;
 }
 
 .header-right{
@@ -167,14 +172,13 @@
     display: block;
 }
 
-
+.lista-card ul{
+    list-style: none;
+}
 .card-description ul{
     list-style-type: none;
     padding-top: 40px;
-    
 }
-
-
 
 .lista-card ul li,
 .card-description ul li{
@@ -440,6 +444,8 @@
     height: 50%;
     position: relative;
     float: left;
+    border: 0px solid gray;
+    transition: border 0.2s;
 }
 
 .ctr-square{
@@ -484,14 +490,16 @@
 
 .language{
     height: 50px;
-    width: 150px;
+    width: 100px;
     display: inline-block;
-    border-top: lightgray;
-    padding-top: 50pz;
+    border-top:1px solid lightgray;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
-.language p,i{
+.language p,.fa-globe-europe,.fa-sort-down{
     color: lightgray;
+    font-size: 12px;
 }
 /*immagini*/
 
@@ -591,4 +599,18 @@
 
 .white{
     color: white;
+}
+
+/*hover*/
+.square-partner:hover{
+    border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-bar a:hover{
+    border-bottom: 1px solid rgb(10, 113, 248);
+}
+
+.btn-large:hover,
+.btn:hover{
+    background-color: #008cff;
 }
