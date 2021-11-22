@@ -18,15 +18,13 @@
 
 /*utilities*/
 .container-wide{
-    width: 97%;
+    width: 100%;
     margin: 0 auto;
-
 }
 
 .container-medium{
     width: 80%;
     margin: 0 auto;
-
 }
 
 .container-small{
@@ -34,7 +32,15 @@
     margin: 0 auto;
 }
 
-.fake-btn{
+header .container-wide{
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 5px 0 10px gray;
+    top: 0;
+    left: 0;
+}
+.radio-text{
     text-decoration: none;
     padding-top: 70px;
     padding-bottom: 40px;
@@ -44,32 +50,31 @@
 }
 
 
-.fake-radio{
+.radio{
     width: 20px;
     height: 20px;
     display: inline-block;
+    background-color: white;
+    border: 2px solid lightgray;
     border-radius: 50%;
     content: " ";
     cursor: pointer;
 }
 
-.fake-radio{
-    border: 5px solid #0061FF
+input[type=radio]{
+    display: none;
 }
 
-.fake-radio-gray{
-    border: 2px solid gray;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    border-radius: 50%;
-    content: " ";
-    cursor: pointer;
+input[type=radio]:checked + .radio{
+    background-color: white;
+    border: 5px solid #0061FF;
 }
+
 
 #logo{
     vertical-align: middle;
     display: inline-block;
+    padding-left: 20px;
 }
 
 .btn{
@@ -145,6 +150,7 @@
     text-decoration: none;
     display: inline block;
     vertical-align: middle;
+    padding-bottom: 2px;
     font-weight: 200;
     margin: 0 30px;
     font-size: 16px;
@@ -203,7 +209,7 @@
 /*text utilities*/
 .jumbo .container-medium h1{
     font-size: 5rem;
-    font-weight: bold 700;
+    font-weight: bold ;
     padding-top: 100px;
     padding-bottom: 86px;
     
@@ -445,7 +451,7 @@
     position: relative;
     float: left;
     border: 0px solid gray;
-    transition: border 0.2s;
+    transition: box-shadow 0.2s;
 }
 
 .ctr-square{
@@ -603,10 +609,11 @@
 
 /*hover*/
 .square-partner:hover{
-    border: 10px solid rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 4px 10px white;
 }
 
 .nav-bar a:hover{
+    padding-bottom: 2px;
     border-bottom: 1px solid rgb(10, 113, 248);
 }
 
