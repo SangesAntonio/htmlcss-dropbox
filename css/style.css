@@ -230,6 +230,9 @@ input[type=radio]:checked + .radio{
 .fa-arrow-down{
     font-size: 40px;
     padding-top: 40px;
+    position: relative;
+    animation: bounce 1s infinite ;
+   
 }
 
  h2{
@@ -323,12 +326,10 @@ input[type=radio]:checked + .radio{
     padding-top: 150px;
 }
 
-
 .row-question h3{
     display: inline-block;
     padding-bottom: 30px;
     padding-top: 30px;
-
 }
 
 .row-question h3 i{
@@ -620,4 +621,13 @@ input[type=radio]:checked + .radio{
 .btn-large:hover,
 .btn:hover{
     background-color: #008cff;
+}
+
+
+/****ANIMAZIONI****/
+
+@keyframes bounce{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(40px);}
+    100%{transition:translateY(0);}
 }
