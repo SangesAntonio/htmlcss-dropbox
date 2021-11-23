@@ -57,35 +57,7 @@ header .container-wide{
     margin: 0 30px;
     width: auto;
 }
-.radio-text{
-    text-decoration: none;
-    padding-top: 70px;
-    padding-bottom: 40px;
-    display: inline-block;
-    font-size: 1.5rem;
-    margin-right: 20px;
-}
 
-
-.radio{
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: white;
-    border: 2px solid lightgray;
-    border-radius: 50%;
-    content: " ";
-    cursor: pointer;
-}
-
-input[type=radio]{
-    display: none;
-}
-
-input[type=radio]:checked + .radio{
-    background-color: white;
-    border: 5px solid #0061FF;
-}
 
 
 #logo{
@@ -163,10 +135,6 @@ input[type=radio]:checked + .radio{
     display: inline-block;
 }
 
-.nav-bar a{
-    
-}
-
 .header-right{
     text-align: right;
 }
@@ -215,12 +183,60 @@ input[type=radio]:checked + .radio{
 }
 
 
-/*text utilities*/
+/***ICON POSITION INTO THE LIST*****/
+.card-description ul li .fas,
+.card-description ul li .far{
+    position: absolute;
+    font-size: 15px;
+    left: 0;
+    
+}
+.lista-card li::before{
+    color: #0061FF;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 15px;
+    content: "\f00c";
+    position: absolute;
+    left: 0;
+}
+/***INPUT RADIO CUSTOM**/
+.radio-text{
+    text-decoration: none;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.radio{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    content: " ";
+    cursor: pointer;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+input[type=radio]:checked + .radio{
+    background-color: white;
+    border: 5px solid #0061FF;
+}
+
+/****TEXT UTILITIES****/
+
 .jumbo .container-medium h1{
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: bold ;
-    padding-top: 100px;
-    padding-bottom: 86px;
+    padding-top: 170px;
+    padding-bottom: 35px;
     
 }
 
@@ -240,28 +256,14 @@ input[type=radio]:checked + .radio{
     font-size: 40px;
     padding-top: 40px;
     position: relative;
+    cursor: pointer;
     animation: bounce 1s infinite ;
 }
 
  h2{
     font-size: 40px;
 }
-.card-description ul li .fas,
-.card-description ul li .far{
-    position: absolute;
-    font-size: 15px;
-    left: 0;
-    
-}
-.lista-card li::before{
-    color: #0061FF;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-    font-size: 15px;
-    content: "\f00c";
-    position: absolute;
-    left: 0;
-}
+
 .sale-banner h3,
 .card h3{
     text-align:center;
@@ -347,40 +349,7 @@ input[type=radio]:checked + .radio{
 
 }
 
-/*colonne float*/
-
-.box-flag{
-    text-align: left;
-    padding: 15px 20px;
-    width: 230px;
-    height: auto;
-    line-height: 1.6rem;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    display: none;
-    transition: display 1s;
-}
-
-.hidden-question,
-.idden-question p{
-    width: 85%;
-    height: 0;
-    display: none;
-    line-height: 1.3rem;
-    padding-bottom: 20px;
-    transition: height 1s;
-}
-
-.row-question:hover .fa-chevron-down {
-    transform: rotatex(180deg);
-}
-
-.row-question:hover .hidden-question {
-    display: inline-block;
-    height: auto;
-}
+/*****LAYOUT****/
 
 .col{
     float: left;
@@ -467,11 +436,11 @@ input[type=radio]:checked + .radio{
     margin-top: 150px;
     height: auto;
 }
-.raw-up .wd-30{
+.row-up .wd-30{
     height: auto;
 }
 
-.raw-up{
+.row-up{
     margin-top: 50px;
     margin-bottom: 100px;
 
@@ -540,6 +509,11 @@ input[type=radio]:checked + .radio{
     opacity: 0.5;
 }
 
+.footer-list{
+    width: calc(100% / 5);
+    margin-top: 100px;
+}
+
 .language{
     height: 50px;
     width: 100px;
@@ -553,7 +527,32 @@ input[type=radio]:checked + .radio{
     color: lightgray;
     font-size: 12px;
 }
-/*immagini*/
+
+/***Tent and hidden menu**/
+.box-flag{
+    text-align: left;
+    padding: 15px 20px;
+    width: 230px;
+    height: auto;
+    line-height: 1.6rem;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    transition: display 1s;
+}
+
+.hidden-question, 
+.hidden-question p{
+    width: 85%;
+    height: 0;
+    display: none;
+    line-height: 1.3rem;
+    padding-bottom: 20px;
+    transition: height 1s;
+}
+/******IMMAGINI*******/
 
 .jumbo-w60 img{
     max-width: 100%;
@@ -564,7 +563,7 @@ input[type=radio]:checked + .radio{
     max-width: 90%;
 }
 
-.raw-up .wd-30 img{
+.row-up .wd-30 img{
     max-width: 100%;
 }
 
@@ -574,10 +573,9 @@ input[type=radio]:checked + .radio{
     filter: invert(100%);
     position: absolute;
     margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .ctr-square img{
@@ -592,16 +590,7 @@ input[type=radio]:checked + .radio{
     margin-bottom: 60px;
 }
 
-.footer-list{
-    width: calc(100% / 5);
-    margin-top: 100px;
-}
-
-.footer-list *{
-    color: white;
-}
-
-/*colors*/
+/******COLORS******/
 
 .light-green{
     background-color: #A2D39B;
@@ -649,7 +638,8 @@ input[type=radio]:checked + .radio{
     background-color: black;
 }
 
-.white{
+.white,
+.footer-list *{
     color: white;
 }
 
@@ -659,7 +649,7 @@ li:hover .box-flag{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
 }
 .square-partner:hover{
-    box-shadow: inset 0 0 4px 10px white;
+    box-shadow: inset 0 0 1px 10px white;
 }
 
 .nav-bar ul li:hover{
@@ -679,7 +669,8 @@ li:hover .box-flag{
     transform: rotatex(180deg);
 }
 
-.row-question:hover .hidden-question {
+.row-question:hover .hidden-question,
+.row-question:hover .hidden-question p {
     display: inline-block;
     height: auto;
 }
