@@ -42,13 +42,13 @@ header .container-wide{
 }
 
 .nav-bar ul li a{
-    
     text-decoration: none;
     font-weight: 200;
     font-size: 16px;
     border-bottom: 0px solid white;
     transition: border-bottom 0.4s;
-    margin: auto
+    margin: auto;
+    
 }
 
 .nav-bar ul li{
@@ -102,11 +102,11 @@ header .container-wide{
 .btn-white{
     text-decoration: none;
     background-color: white;
-    border: 1pz solid gray;
     display: inline-block;
     width: 100%;
     padding: 10px 0;
     font-size: 1.1rem;
+    transition: background-color 0.6s;
 }
 
 .team-banner a,
@@ -121,7 +121,7 @@ header .container-wide{
     color: #0061FF;
 }
 
-.link-black{
+.buy-link .link-black{
     color: black;
     display: inline-block;
     border-bottom: 1px solid lightgray;
@@ -163,15 +163,6 @@ header .container-wide{
     padding-top: 40px;
 }
 
-.lista-card ul li,
-.card-description ul li{
-    padding-top: 20px;
-    font-size: 12;
-    font-weight: normal;
-    padding-left: 17px;
-    position: relative
-}
-
 .footer-list ul{
     list-style: none;
     padding-top: 20px;
@@ -184,21 +175,27 @@ header .container-wide{
 
 
 /***ICON POSITION INTO THE LIST*****/
-.card-description ul li .fas,
-.card-description ul li .far{
-    position: absolute;
-    font-size: 15px;
-    left: 0;
+.lista-card ul li,
+.card-description ul li {
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 1.3em;
+    text-indent: -0.6em;
     
 }
-.lista-card li::before{
+
+.lista-card ul li{
+    text-indent: -1.2em;
+}
+
+.lista-card ul li .check::before{
     color: #0061FF;
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
     content: "\f00c";
-    position: absolute;
-    left: 0;
+    padding-right: 0.1em;
 }
 /***INPUT RADIO CUSTOM**/
 .radio-text{
@@ -258,6 +255,7 @@ input[type=radio]:checked + .radio{
     position: relative;
     cursor: pointer;
     animation: bounce 1s infinite ;
+    filter: drop-shadow(0px 5px 7px rgb(68, 68, 68));
 }
 
  h2{
@@ -346,7 +344,6 @@ input[type=radio]:checked + .radio{
     padding-left: 450px;
     transform: rotatex(0deg);
     transition: transform 0.3s;
-
 }
 
 /*****LAYOUT****/
@@ -528,12 +525,13 @@ input[type=radio]:checked + .radio{
     font-size: 12px;
 }
 
-/***Tent and hidden menu**/
+/***Tent and hidden nav**/
 .box-flag{
     text-align: left;
     padding: 15px 20px;
     width: 230px;
     height: auto;
+    z-index: 1;
     line-height: 1.6rem;
     background-color: white;
     position: absolute;
@@ -546,11 +544,10 @@ input[type=radio]:checked + .radio{
 .hidden-question, 
 .hidden-question p{
     width: 85%;
-    height: 0;
+    height: 0px;
     display: none;
     line-height: 1.3rem;
     padding-bottom: 20px;
-    transition: height 1s;
 }
 /******IMMAGINI*******/
 
@@ -657,9 +654,9 @@ li:hover .box-flag{
 }
 .nav-bar ul #btn-nav{
     border-bottom: none;
-    
 }
 
+.btn-white:hover,
 .btn-large:hover,
 .btn:hover{
     background-color: #008cff;
@@ -672,14 +669,14 @@ li:hover .box-flag{
 .row-question:hover .hidden-question,
 .row-question:hover .hidden-question p {
     display: inline-block;
-    height: auto;
+    height: 103.9px;
 }
 
 
-/****ANIMAZIONI****/
+/****ANIMATIONS****/
 
 @keyframes bounce{
-    0%{transform:translateY(0);}
+    0%{transform:translateY(0px);}
     50%{transform:translateY(40px);}
-    100%{transition:translateY(0);}
+    100%{transition:translateY(0px);}
 }
